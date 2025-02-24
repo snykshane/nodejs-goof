@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('snykcheck') {
+      steps {
+        snykSecurity(additionalArguments: '-d')
+      }
+    }
+
   }
 }
