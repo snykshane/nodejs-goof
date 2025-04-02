@@ -37,6 +37,7 @@ steps:
 - task: SnykSecurityScan@1 
   displayName: 'Snyk Security Scan'
   inputs:
-    serviceConnectionEndpoint: 'ADOsnyk' # Your Snyk service connection name
+    serviceConnectionEndpoint: 'ADOsnyk' 
     testType: 'app' # or 'npm' if you want to scan only npm dependencies.
     monitorWhen: 'always'
+    additionalArguments: --iac
