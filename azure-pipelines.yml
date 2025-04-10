@@ -40,4 +40,3 @@ steps:
     serviceConnectionEndpoint: 'ADOsnyk' 
     testType: 'app' # or 'npm' if you want to scan only npm dependencies.
     monitorWhen: 'always'
-    additionalArguments: --iac
